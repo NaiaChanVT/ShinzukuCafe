@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Shinzuku | しんずく — Café Japonés · Silao, Guanajuato</title>
+<title>Shinzuku | しんずく</title>
 <meta name="description" content="Shinzuku es una experiencia de café y postres japoneses en Silao, Guanajuato. Inspirado en la quietud de Tokio."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -418,10 +419,12 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
   #cta-band{padding:60px 24px}
 }
 </style>
+
 </head>
 <body>
 
 <!-- NAV -->
+
 <nav id="nav">
   <a href="#" class="nav-brand">
     <svg width="30" height="36" viewBox="0 0 30 36" fill="none">
@@ -448,6 +451,7 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </nav>
 
 <!-- DRAWER -->
+
 <div class="drawer-overlay" id="dOv"></div>
 <div class="drawer" id="drawer">
   <button class="drawer-close" id="dClose">×</button>
@@ -461,6 +465,7 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </div>
 
 <!-- HERO -->
+
 <section id="hero">
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-vignette"></div>
@@ -487,6 +492,7 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </section>
 
 <!-- MARQUEE -->
+
 <div class="marquee-band" aria-hidden="true">
   <div class="marquee-track" id="mTrack">
     <span>抹茶ラテ</span><span class="dot">·</span><span>Matcha · Hojicha · Té de Jazmín · Café de Goteo</span><span class="dot">·</span>
@@ -501,6 +507,7 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </div>
 
 <!-- ABOUT — compacto -->
+
 <section id="about">
   <div class="about-inner">
     <div class="reveal-fade">
@@ -520,6 +527,7 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </section>
 
 <!-- CRAFT -->
+
 <div id="craft">
   <div class="craft-img-wrap" id="craftImg">
     <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1000&q=88&auto=format&fit=crop&crop=center" alt="Café de goteo" loading="lazy"/>
@@ -537,6 +545,7 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </div>
 
 <!-- MENÚ -->
+
 <section id="menu">
   <div class="menu-inner">
     <div class="menu-hdr">
@@ -544,139 +553,143 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
       <div class="menu-hdr-right reveal"><p>Ingredientes de temporada. Técnica japonesa. Servido sin apuro.</p><span class="mn">メニュー · Precios en pesos mexicanos</span></div>
     </div>
 
-    <!-- BEBIDAS -->
-    <div class="cat-row reveal"><span class="cat-title">飲み物 · Bebidas</span><div class="cat-rule"></div></div>
-    <div class="products-grid">
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=600&q=85&auto=format&fit=crop" alt="Matcha Latte" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Matcha Latte</span><span class="prod-price">$85</span></div>
-          <span class="prod-jp">抹茶ラテ</span>
-          <p class="prod-desc">Matcha ceremonial de Uji, batido en frío y mezclado con leche de avena. Suave y vegetal.</p>
-          <span class="prod-tag">Vegano disponible</span>
-          <button class="add-btn" onclick="addToOrder(1)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=85&auto=format&fit=crop" alt="Hojicha Latte" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Hojicha Latte</span><span class="prod-price">$80</span></div>
-          <span class="prod-jp">ほうじ茶ラテ</span>
-          <p class="prod-desc">Té hojicha tostado, con notas de caramelo y madera. Bajo en cafeína, alto en calidez.</p>
-          <span class="prod-tag">Bajo en cafeína</span>
-          <button class="add-btn" onclick="addToOrder(2)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=85&auto=format&fit=crop" alt="Café de Goteo" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Café de Goteo</span><span class="prod-price">$75</span></div>
-          <span class="prod-jp">ハンドドリップ</span>
-          <p class="prod-desc">Granos de origen único, preparados a mano con Hario V60. Limpio, aromático, sin apuro.</p>
-          <span class="prod-tag">Origen único</span>
-          <button class="add-btn" onclick="addToOrder(3)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=85&auto=format&fit=crop" alt="Té de Jazmín" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Té de Jazmín</span><span class="prod-price">$65</span></div>
-          <span class="prod-jp">ジャスミン茶</span>
-          <p class="prod-desc">Flores de jazmín sueltas, infusionadas en agua caliente a 80°C. Delicado, floral y refrescante.</p>
-          <span class="prod-tag">Sin cafeína</span>
-          <button class="add-btn" onclick="addToOrder(7)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1481834702673-53fc5402f9e3?w=600&q=85&auto=format&fit=crop" alt="Sakura Milk Tea" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Sakura Milk Tea</span><span class="prod-price">$90</span></div>
-          <span class="prod-jp">さくらミルクティー</span>
-          <p class="prod-desc">Té negro con jarabe de flor de cerezo, leche espumada y pétalos rosas. Dulce y aromático.</p>
-          <span class="prod-tag">Edición especial</span>
-          <button class="add-btn" onclick="addToOrder(8)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=85&auto=format&fit=crop" alt="Café con Leche" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Café con Leche</span><span class="prod-price">$70</span></div>
-          <span class="prod-jp">カフェラテ</span>
-          <p class="prod-desc">Espresso doble extraído lento, con leche texturizada al vapor. Suave y equilibrado.</p>
-          <span class="prod-tag">Clásico</span>
-          <button class="add-btn" onclick="addToOrder(9)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
+```
+<!-- BEBIDAS -->
+<div class="cat-row reveal"><span class="cat-title">飲み物 · Bebidas</span><div class="cat-rule"></div></div>
+<div class="products-grid">
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=600&q=85&auto=format&fit=crop" alt="Matcha Latte" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Matcha Latte</span><span class="prod-price">$85</span></div>
+      <span class="prod-jp">抹茶ラテ</span>
+      <p class="prod-desc">Matcha ceremonial de Uji, batido en frío y mezclado con leche de avena. Suave y vegetal.</p>
+      <span class="prod-tag">Vegano disponible</span>
+      <button class="add-btn" onclick="addToOrder(1)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
     </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=85&auto=format&fit=crop" alt="Hojicha Latte" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Hojicha Latte</span><span class="prod-price">$80</span></div>
+      <span class="prod-jp">ほうじ茶ラテ</span>
+      <p class="prod-desc">Té hojicha tostado, con notas de caramelo y madera. Bajo en cafeína, alto en calidez.</p>
+      <span class="prod-tag">Bajo en cafeína</span>
+      <button class="add-btn" onclick="addToOrder(2)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=85&auto=format&fit=crop" alt="Café de Goteo" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Café de Goteo</span><span class="prod-price">$75</span></div>
+      <span class="prod-jp">ハンドドリップ</span>
+      <p class="prod-desc">Granos de origen único, preparados a mano con Hario V60. Limpio, aromático, sin apuro.</p>
+      <span class="prod-tag">Origen único</span>
+      <button class="add-btn" onclick="addToOrder(3)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=85&auto=format&fit=crop" alt="Té de Jazmín" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Té de Jazmín</span><span class="prod-price">$65</span></div>
+      <span class="prod-jp">ジャスミン茶</span>
+      <p class="prod-desc">Flores de jazmín sueltas, infusionadas en agua caliente a 80°C. Delicado, floral y refrescante.</p>
+      <span class="prod-tag">Sin cafeína</span>
+      <button class="add-btn" onclick="addToOrder(7)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1481834702673-53fc5402f9e3?w=600&q=85&auto=format&fit=crop" alt="Sakura Milk Tea" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Sakura Milk Tea</span><span class="prod-price">$90</span></div>
+      <span class="prod-jp">さくらミルクティー</span>
+      <p class="prod-desc">Té negro con jarabe de flor de cerezo, leche espumada y pétalos rosas. Dulce y aromático.</p>
+      <span class="prod-tag">Edición especial</span>
+      <button class="add-btn" onclick="addToOrder(8)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=85&auto=format&fit=crop" alt="Café con Leche" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Café con Leche</span><span class="prod-price">$70</span></div>
+      <span class="prod-jp">カフェラテ</span>
+      <p class="prod-desc">Espresso doble extraído lento, con leche texturizada al vapor. Suave y equilibrado.</p>
+      <span class="prod-tag">Clásico</span>
+      <button class="add-btn" onclick="addToOrder(9)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+</div>
 
-    <!-- POSTRES Y COMIDA -->
-    <div class="cat-row reveal" style="margin-top:8px"><span class="cat-title">デザート · Postres &amp; Bocados</span><div class="cat-rule"></div></div>
-    <div class="products-grid">
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=85&auto=format&fit=crop" alt="Cheesecake Japonés" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Cheesecake Japonés</span><span class="prod-price">$65</span></div>
-          <span class="prod-jp">スフレチーズケーキ</span>
-          <p class="prod-desc">Soufflé de queso crema, suave como algodón. Ligeramente dulce, se deshace en boca.</p>
-          <span class="prod-tag">Hecho en casa</span>
-          <button class="add-btn" onclick="addToOrder(4)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=600&q=85&auto=format&fit=crop" alt="Dorayaki" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Dorayaki</span><span class="prod-price">$55</span></div>
-          <span class="prod-jp">どら焼き</span>
-          <p class="prod-desc">Dos pancakes de miel con pasta de frijol azuki. Un clásico japonés preparado fresco cada día.</p>
-          <span class="prod-tag">Tradicional</span>
-          <button class="add-btn" onclick="addToOrder(5)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=85&auto=format&fit=crop" alt="Mochi" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Mochi</span><span class="prod-price">$50 / pza</span></div>
-          <span class="prod-jp">もち</span>
-          <p class="prod-desc">Arroz glutinoso relleno de sabores de temporada: matcha, sakura o ube. Cambia con la época.</p>
-          <span class="prod-tag">Temporada</span>
-          <button class="add-btn" onclick="addToOrder(6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=600&q=85&auto=format&fit=crop" alt="Sándwich de Frutas" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Sándwich de Frutas</span><span class="prod-price">$75</span></div>
-          <span class="prod-jp">フルーツサンド</span>
-          <p class="prod-desc">Pan brioche con crema batida y frutas frescas de temporada: fresa, mango y kiwi. Fresco y delicado.</p>
-          <span class="prod-tag">Fresco del día</span>
-          <button class="add-btn" onclick="addToOrder(10)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1519915028121-7d3463d5b1ff?w=600&q=85&auto=format&fit=crop" alt="Taiyaki" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Taiyaki</span><span class="prod-price">$60</span></div>
-          <span class="prod-jp">たい焼き</span>
-          <p class="prod-desc">Waffle en forma de pez relleno de pasta de azuki o crema de matcha. Crujiente por fuera, suave por dentro.</p>
-          <span class="prod-tag">Relleno a elegir</span>
-          <button class="add-btn" onclick="addToOrder(11)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-img"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=85&auto=format&fit=crop" alt="Parfait de Matcha" loading="lazy"/></div>
-        <div class="prod-body">
-          <div class="prod-top"><span class="prod-name">Parfait de Matcha</span><span class="prod-price">$95</span></div>
-          <span class="prod-jp">抹茶パフェ</span>
-          <p class="prod-desc">Capas de granola, crema de matcha, mochi mini, azuki y helado. El postre más completo del menú.</p>
-          <span class="prod-tag">Firma Shinzuku</span>
-          <button class="add-btn" onclick="addToOrder(12)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
-        </div>
-      </div>
+<!-- POSTRES Y COMIDA -->
+<div class="cat-row reveal" style="margin-top:8px"><span class="cat-title">デザート · Postres &amp; Bocados</span><div class="cat-rule"></div></div>
+<div class="products-grid">
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=85&auto=format&fit=crop" alt="Cheesecake Japonés" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Cheesecake Japonés</span><span class="prod-price">$65</span></div>
+      <span class="prod-jp">スフレチーズケーキ</span>
+      <p class="prod-desc">Soufflé de queso crema, suave como algodón. Ligeramente dulce, se deshace en boca.</p>
+      <span class="prod-tag">Hecho en casa</span>
+      <button class="add-btn" onclick="addToOrder(4)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
     </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=600&q=85&auto=format&fit=crop" alt="Dorayaki" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Dorayaki</span><span class="prod-price">$55</span></div>
+      <span class="prod-jp">どら焼き</span>
+      <p class="prod-desc">Dos pancakes de miel con pasta de frijol azuki. Un clásico japonés preparado fresco cada día.</p>
+      <span class="prod-tag">Tradicional</span>
+      <button class="add-btn" onclick="addToOrder(5)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=85&auto=format&fit=crop" alt="Mochi" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Mochi</span><span class="prod-price">$50 / pza</span></div>
+      <span class="prod-jp">もち</span>
+      <p class="prod-desc">Arroz glutinoso relleno de sabores de temporada: matcha, sakura o ube. Cambia con la época.</p>
+      <span class="prod-tag">Temporada</span>
+      <button class="add-btn" onclick="addToOrder(6)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=600&q=85&auto=format&fit=crop" alt="Sándwich de Frutas" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Sándwich de Frutas</span><span class="prod-price">$75</span></div>
+      <span class="prod-jp">フルーツサンド</span>
+      <p class="prod-desc">Pan brioche con crema batida y frutas frescas de temporada: fresa, mango y kiwi. Fresco y delicado.</p>
+      <span class="prod-tag">Fresco del día</span>
+      <button class="add-btn" onclick="addToOrder(10)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1519915028121-7d3463d5b1ff?w=600&q=85&auto=format&fit=crop" alt="Taiyaki" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Taiyaki</span><span class="prod-price">$60</span></div>
+      <span class="prod-jp">たい焼き</span>
+      <p class="prod-desc">Waffle en forma de pez relleno de pasta de azuki o crema de matcha. Crujiente por fuera, suave por dentro.</p>
+      <span class="prod-tag">Relleno a elegir</span>
+      <button class="add-btn" onclick="addToOrder(11)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+  <div class="prod-card reveal">
+    <div class="prod-img"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=85&auto=format&fit=crop" alt="Parfait de Matcha" loading="lazy"/></div>
+    <div class="prod-body">
+      <div class="prod-top"><span class="prod-name">Parfait de Matcha</span><span class="prod-price">$95</span></div>
+      <span class="prod-jp">抹茶パフェ</span>
+      <p class="prod-desc">Capas de granola, crema de matcha, mochi mini, azuki y helado. El postre más completo del menú.</p>
+      <span class="prod-tag">Firma Shinzuku</span>
+      <button class="add-btn" onclick="addToOrder(12)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Agregar al pedido</button>
+    </div>
+  </div>
+</div>
+```
+
   </div>
 </section>
 
 <!-- GALERÍA -->
+
 <section id="ambiente">
   <div class="amb-inner">
     <div class="amb-hdr reveal">
@@ -694,6 +707,7 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </section>
 
 <!-- TEMPORADA -->
+
 <section id="temporada">
   <div class="temp-inner">
     <div class="temp-top">
@@ -710,6 +724,7 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </section>
 
 <!-- ═══════ PEDIDOS ═══════ -->
+
 <section id="pedidos">
   <div class="ped-inner">
     <div class="ped-header reveal">
@@ -718,60 +733,64 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
       <p>Elige tus productos, genera la imagen de tu orden y envíala a nuestro Instagram. Pagamos en efectivo a la entrega.</p>
     </div>
 
-    <div class="ped-layout">
-      <!-- catálogo -->
-      <div class="ped-catalog reveal">
-        <span class="ped-cat-title">飲み物 · Bebidas</span>
-        <div id="ped-rows-bebidas"></div>
-        <span class="ped-cat-title" style="margin-top:20px;display:block">デザート · Postres</span>
-        <div id="ped-rows-postres"></div>
-      </div>
+```
+<div class="ped-layout">
+  <!-- catálogo -->
+  <div class="ped-catalog reveal">
+    <span class="ped-cat-title">飲み物 · Bebidas</span>
+    <div id="ped-rows-bebidas"></div>
+    <span class="ped-cat-title" style="margin-top:20px;display:block">デザート · Postres</span>
+    <div id="ped-rows-postres"></div>
+  </div>
 
-      <!-- resumen -->
-      <div class="ped-summary reveal">
-        <div class="ped-sum-header">
-          <h3>Tu Pedido</h3>
-          <span>ご注文 · Revisa antes de generar</span>
-        </div>
-        <div class="ped-sum-items" id="sumItems">
-          <p class="ped-empty-msg" id="emptyMsg">まだ何もない — Agrega productos del menú</p>
-        </div>
-
-        <!-- barra de envío -->
-        <div class="ped-shipping-bar">
-          <p class="shipping-msg" id="shippingMsg">Agrega <strong id="shippingNeed">$299</strong> más para <strong>envío gratis</strong></p>
-          <div class="shipping-progress-wrap"><div class="shipping-progress" id="shippingBar" style="width:0%"></div></div>
-        </div>
-
-        <div class="ped-totals">
-          <div class="total-row"><span>Subtotal</span><span id="totSub">$0</span></div>
-          <div class="total-row"><span>Envío</span><span id="totEnvio">$80</span></div>
-          <div class="total-divider"></div>
-          <div class="total-row grand"><span>Total</span><span id="totGrand">$0</span></div>
-
-          <div class="cash-note" style="margin:16px 0 0">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-            <p><strong>Pago en efectivo</strong> — No cobramos en línea. Al recibir tu pedido pagas en mano. Envío en León, Gto.</p>
-          </div>
-
-          <span class="ped-name-label">Tu nombre para el pedido</span>
-          <input type="text" class="ped-name-input" id="pedNombre" placeholder="Ej. María G." maxlength="40"/>
-
-          <button class="btn-generar" id="btnGenerar" disabled onclick="generarImagen()">
-            Generar imagen del pedido
-          </button>
-          <p class="ped-ig-note">Descarga la imagen y envíala a <strong>@shinzuku.cafe</strong> en Instagram para confirmar tu orden.</p>
-        </div>
-      </div>
+  <!-- resumen -->
+  <div class="ped-summary reveal">
+    <div class="ped-sum-header">
+      <h3>Tu Pedido</h3>
+      <span>ご注文 · Revisa antes de generar</span>
     </div>
+    <div class="ped-sum-items" id="sumItems">
+      <p class="ped-empty-msg" id="emptyMsg">まだ何もない — Agrega productos del menú</p>
+    </div>
+
+    <!-- barra de envío -->
+    <div class="ped-shipping-bar">
+      <p class="shipping-msg" id="shippingMsg">Agrega <strong id="shippingNeed">$299</strong> más para <strong>envío gratis</strong></p>
+      <div class="shipping-progress-wrap"><div class="shipping-progress" id="shippingBar" style="width:0%"></div></div>
+    </div>
+
+    <div class="ped-totals">
+      <div class="total-row"><span>Subtotal</span><span id="totSub">$0</span></div>
+      <div class="total-row"><span>Envío</span><span id="totEnvio">$80</span></div>
+      <div class="total-divider"></div>
+      <div class="total-row grand"><span>Total</span><span id="totGrand">$0</span></div>
+
+      <div class="cash-note" style="margin:16px 0 0">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        <p><strong>Pago en efectivo</strong> — No cobramos en línea. Al recibir tu pedido pagas en mano. Envío en Silao, Gto.</p>
+      </div>
+
+      <span class="ped-name-label">Tu nombre para el pedido</span>
+      <input type="text" class="ped-name-input" id="pedNombre" placeholder="Ej. María G." maxlength="40"/>
+
+      <button class="btn-generar" id="btnGenerar" disabled onclick="generarImagen()">
+        Generar imagen del pedido
+      </button>
+      <p class="ped-ig-note">Descarga la imagen y envíala a <strong>@ShinzukuCafe</strong> en Instagram para confirmar tu orden.</p>
+    </div>
+  </div>
+</div>
+```
+
   </div>
 </section>
 
 <!-- INSTAGRAM -->
+
 <section id="instagram">
   <div class="ig-inner">
     <div class="ig-hdr reveal">
-      <div><span class="s-label">Síguenos</span><h2>@shinzuku.cafe</h2></div>
+      <div><span class="s-label">Síguenos</span><h2>@ShinzukuCafe</h2></div>
       <a href="https://instagram.com" target="_blank" rel="noopener" class="ig-handle"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>Ver en Instagram</a>
     </div>
     <div class="ig-grid reveal-fade">
@@ -786,44 +805,47 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </section>
 
 <!-- VISÍTANOS -->
+
 <section id="visita">
   <div class="vis-inner">
     <div class="vis-text">
       <span class="s-label dark reveal">Encuéntranos</span>
-      <h2 class="reveal">León,<br><em>Guanajuato.</em></h2>
-      <div class="det-row reveal"><div class="det-icon"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div><span class="det-lbl">Dirección</span><span class="det-val">León, Guanajuato, México<br><span style="font-size:.8rem;color:var(--sand)">Ubicación exacta — Próximamente</span></span></div></div>
+      <h2 class="reveal">Silao,<br><em>Guanajuato.</em></h2>
+      <div class="det-row reveal"><div class="det-icon"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div><span class="det-lbl">Dirección</span><span class="det-val">Silao, Guanajuato, México<br><span style="font-size:.8rem;color:var(--sand)">Ubicación exacta — Próximamente</span></span></div></div>
       <div class="det-row reveal"><div class="det-icon"><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><span class="det-lbl">Horario</span><span class="det-val">Lunes – Viernes · 8:00 – 20:00<br>Sábado – Domingo · 9:00 – 21:00</span></div></div>
-      <div class="det-row reveal"><div class="det-icon"><svg width="18" height="18" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg></div><div><span class="det-lbl">Contacto</span><span class="det-val">hola@shinzuku.cafe</span></div></div>
+      <div class="det-row reveal"><div class="det-icon"><svg width="18" height="18" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg></div><div><span class="det-lbl">Contacto</span><span class="det-val">hola@ShinzukuCafe</span></div></div>
     </div>
     <div class="vis-map reveal-fade">
-      <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900&q=80&auto=format&fit=crop" alt="León" loading="lazy"/>
-      <div class="map-tag"><svg width="10" height="10" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Shinzuku · León, Gto.</div>
+      <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900&q=80&auto=format&fit=crop" alt="Silao" loading="lazy"/>
+      <div class="map-tag"><svg width="10" height="10" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>Shinzuku · Silao, Gto.</div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
+
 <div id="cta-band">
-  <h2>Próximamente en León.</h2>
+  <h2>Próximamente en Silao.</h2>
   <p>Sé el primero en saber cuándo abrimos — síguenos en Instagram.</p>
-  <a href="https://instagram.com" target="_blank" rel="noopener" class="btn-band">@shinzuku.cafe</a>
+  <a href="https://instagram.com" target="_blank" rel="noopener" class="btn-band">@ShinzukuCafe</a>
 </div>
 
 <!-- FOOTER -->
+
 <footer>
   <div class="ft-inner">
     <div class="ft-top">
       <div>
         <span class="ft-brand-en">Shinzuku</span>
         <span class="ft-brand-jp">しんずく</span>
-        <p class="ft-about">Una experiencia de café y postres japoneses inspirada en la quietud de Tokio. Próximamente en León, Guanajuato.</p>
+        <p class="ft-about">Una experiencia de café y postres japoneses inspirada en la quietud de Tokio. Próximamente en Silao, Guanajuato.</p>
         <div class="ft-social">
           <a href="https://instagram.com" class="soc-btn" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
         </div>
       </div>
       <div class="ft-col"><h4>Secciones</h4><ul><li><a href="#about">Filosofía</a></li><li><a href="#menu">Menú</a></li><li><a href="#ambiente">El Café</a></li><li><a href="#temporada">Temporada</a></li><li><a href="#pedidos">Hacer Pedido</a></li><li><a href="#visita">Visítanos</a></li></ul></div>
       <div class="ft-col"><h4>Menú</h4><ul><li><a href="#menu">Matcha Latte</a></li><li><a href="#menu">Hojicha Latte</a></li><li><a href="#menu">Café de Goteo</a></li><li><a href="#menu">Cheesecake</a></li><li><a href="#menu">Dorayaki</a></li><li><a href="#menu">Mochi</a></li></ul></div>
-      <div class="ft-col"><h4>Contacto</h4><ul><li><a href="mailto:hola@shinzuku.cafe">hola@shinzuku.cafe</a></li><li><a href="https://instagram.com" target="_blank">@shinzuku.cafe</a></li><li><a href="#visita">León, Guanajuato</a></li></ul></div>
+      <div class="ft-col"><h4>Contacto</h4><ul><li><a href="mailto:hola@ShinzukuCafe">hola@ShinzukuCafe</a></li><li><a href="https://instagram.com" target="_blank">@ShinzukuCafe</a></li><li><a href="#visita">Silao, Guanajuato</a></li></ul></div>
     </div>
     <div class="ft-bottom">
       <p>© 2026 Shinzuku しんずく · Todos los derechos reservados</p>
@@ -833,11 +855,12 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
 </footer>
 
 <!-- TICKET OCULTO para html2canvas -->
+
 <div id="ticket-template">
   <div class="tk-header">
     <span class="tk-logo-en">Shinzuku</span>
     <span class="tk-logo-jp">しんずく</span>
-    <span class="tk-tagline">Café Japonés · León, Guanajuato</span>
+    <span class="tk-tagline">Café Japonés · Silao, Guanajuato</span>
   </div>
   <div class="tk-body">
     <div class="tk-nombre" id="tk-nombre-row">
@@ -853,11 +876,12 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
     <span class="tk-folio" id="tk-folio"></span>
   </div>
   <div class="tk-footer">
-    <p>Envía esta imagen a <strong>@shinzuku.cafe</strong> en Instagram<br>para confirmar tu pedido · Pago en efectivo a la entrega</p>
+    <p>Envía esta imagen a <strong>@ShinzukuCafe</strong> en Instagram<br>para confirmar tu pedido · Pago en efectivo a la entrega</p>
   </div>
 </div>
 
 <!-- MODAL -->
+
 <div class="img-modal-overlay" id="imgModal">
   <div class="img-modal">
     <div class="img-modal-header">
@@ -865,7 +889,7 @@ footer{background:var(--ink);padding:64px 52px 36px;color:rgba(255,255,255,.45)}
       <button class="img-modal-close" id="modalClose">×</button>
     </div>
     <div class="img-modal-body">
-      <p>Descarga esta imagen y envíala a <strong>@shinzuku.cafe</strong> en Instagram para confirmar tu orden.</p>
+      <p>Descarga esta imagen y envíala a <strong>@ShinzukuCafe</strong> en Instagram para confirmar tu orden.</p>
       <canvas id="pedidoCanvas"></canvas>
       <div class="modal-actions">
         <button class="btn-download" id="btnDownload">Descargar imagen</button>
@@ -1136,7 +1160,7 @@ function generarImagen(){
   /* ── FOOTER dark ── */
   rect(0, H-FTR_H, W, FTR_H, INK);
   const fy = H - FTR_H + 24;
-  text('Envía esta imagen a @shinzuku.cafe en Instagram', W/2, fy, '11px Arial,sans-serif', 'rgba(255,255,255,0.55)', 'center');
+  text('Envía esta imagen a @ShinzukuCafe en Instagram', W/2, fy, '11px Arial,sans-serif', 'rgba(255,255,255,0.55)', 'center');
   text('para confirmar tu pedido · Pago en efectivo a la entrega', W/2, fy+18, '11px Arial,sans-serif', 'rgba(255,255,255,0.45)', 'center');
   // sage accent bar at bottom
   rect(0, H-10, W, 10, SAGE);
@@ -1222,5 +1246,6 @@ if(mt) mt.innerHTML+=mt.innerHTML;
 renderCatalog();
 updateAll();
 </script>
+
 </body>
 </html>
